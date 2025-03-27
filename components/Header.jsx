@@ -6,7 +6,7 @@ import React from "react";
 const Header = async({isAdminPage=false}) => {
     const isAdmin = false;
   return (
-    <header className="">
+    <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b">
      <nav>
         <Link href={isAdminPage ? "/admin" : "/"}>
             <Image src={"/logo.png"} alt='Vehiql Logo'
